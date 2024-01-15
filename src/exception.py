@@ -1,5 +1,5 @@
 import sys
-
+from src.logger import logging
 ### Whenever an exception gets raised, I want to push this on my own custom message
 
 def error_message_detail(error,error_detail:sys):    ### error:whatever message I'm gettingk

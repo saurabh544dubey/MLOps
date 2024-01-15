@@ -5,6 +5,7 @@
 4. Create setup.py -- It'll be responsible for creating my ML Application as a package.
 5. Create folder `src` and under it file `__init__.py`: This can be imported like libraries. All the project development inside this folder.
 6. Create requirements.txt -- store packages to be used. At last, we'll mention `-e .` which will automatically trigger setup.py file.
+Comment down `-e .` after it is executed so that when we install more libraries later on, my package will not build again and again.
 
 #### To install Libraries
 - `pip install -r requiremnts.txt`
@@ -38,3 +39,12 @@
 - It is used for the purpose that any execution that probably happens, we should be able to log all the information and everything in some files so that we will be able to track.
 - Even if there is some errors, it'll try to log that into the text file.
 - A file inside a folder will be created with information in the specified format.
+
+
+## EDA and Model Training
+- Create a folder `Notebook` and inside create 2 ipynb files i.e EDA and Model Training.
+- I will do the EDA and Model Training here because it is easy to do it in Jupyter notebook.
+- I will store my data in this `Notebook` folder.
+
+- After doing all these, I will go into my src folder and do Modular coding by writing functions.
+- I will do all these again in the respective files I created under src.
