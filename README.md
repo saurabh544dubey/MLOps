@@ -48,3 +48,9 @@ Comment down `-e .` after it is executed so that when we install more libraries 
 
 - After doing all these, I will go into my src folder and do Modular coding by writing functions.
 - I will do all these again in the respective files I created under src.
+
+## Data Ingestion
+- Reading the Data from some specific source.
+- Then we'll train_test_split the data.
+- Then I save the data into artifacts folder and return the paths from the class so as to be used in Data Transformation.
+- After executing all this, add `.artifacts` in gitignore file
