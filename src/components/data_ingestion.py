@@ -6,6 +6,10 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass ### By using this decorator, I can directly specify variables without writing __init__ in class
 
+
+from src.components.data_transformation import DataTransformation,DataTransformationConfig
+
+
 ### We have to make a class in which we will be specifying the paths where to save the extracted data. Raw Data,Train Data,Test Data
 
 ### Because we're just defining variables, therefore I am using dataclass
@@ -56,7 +60,10 @@ class DataIngestion:
 ### Initiating Data Ingestion
 if __name__=="__main__":
     obj=DataIngestion()
-    obj.initiate_data_ingestion()
+    train_data,test_data = obj.initiate_data_ingestion()
+    
+    data_transformation=DataTransformation()
+    data_transformation.initiate_data_transformation(train_data,test_data)
     
     
 ## Terminal - python src/components/data_ingestion.py

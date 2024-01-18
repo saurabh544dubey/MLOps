@@ -54,3 +54,9 @@ Comment down `-e .` after it is executed so that when we install more libraries 
 - Then we'll train_test_split the data.
 - Then I save the data into artifacts folder and return the paths from the class so as to be used in Data Transformation.
 - After executing all this, add `.artifacts` in gitignore file
+
+## Data Transformation
+- Mean aim is to do Feature Engineering, Data Cleaning, converting categorical Features and so on...
+- I did this in Jupyter. Now I'll modular code it in form of classes and functions in my Data Transformation file.
+- We will make our `save_object` function in `utils.py` beccause we will be using it in others too.
+- We'll use `dill` library to save the model.
