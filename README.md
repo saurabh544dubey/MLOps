@@ -60,3 +60,16 @@ Comment down `-e .` after it is executed so that when we install more libraries 
 - I did this in Jupyter. Now I'll modular code it in form of classes and functions in my Data Transformation file.
 - We will make our `save_object` function in `utils.py` beccause we will be using it in others too.
 - We'll use `dill` library to save the model.
+
+## Model Training
+- Create a class to train the models.
+- We'll try every model and select the model which is giving us the best results.
+- We will evaluate models by crreating a function in `utils.py`.
+- We are storing it in a dictionary and returning the model with best score.
+- Then we are saving that model.
+
+## Hyperparameter tuning
+- We will do this in the same model trainer file.
+- We can also do it in another file.
+- We'll specify the parameters in the model trainer and create a parameter in evaluate model in `utils.py`.
+- Then we write the code to train on hyperparameters and selecting the best one.
