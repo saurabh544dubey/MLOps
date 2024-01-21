@@ -73,3 +73,13 @@ Comment down `-e .` after it is executed so that when we install more libraries 
 - We can also do it in another file.
 - We'll specify the parameters in the model trainer and create a parameter in evaluate model in `utils.py`.
 - Then we write the code to train on hyperparameters and selecting the best one.
+
+## Prediction pipeline
+- We will make it using Flask web app.
+- User will give us data, then we have 2 pickle files i.e  `preprocessor` and `model` and we use them to generate predictions on user data.
+- Create `app.py` outside of each folder.
+- Create a folder `templates` to store html templates.
+- Prediction part will be done in `predict_pipeline.py` file.
+- I get Data from my user and then convert it into DataFrame in `predict_pipeline.py` file.
+
+<!-- Error has occured..Check it -->
