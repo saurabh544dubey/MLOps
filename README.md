@@ -82,4 +82,12 @@ Comment down `-e .` after it is executed so that when we install more libraries 
 - Prediction part will be done in `predict_pipeline.py` file.
 - I get Data from my user and then convert it into DataFrame in `predict_pipeline.py` file.
 
-<!-- Error has occured..Check it -->
+## Deployment using CI/CD
+- Here I am going to be doing in AWS.
+- We need to make some configuration changes.
+- We have to setup 2 important configurations whenever we are working with `elastic beanstalk` which is a kind of instance which is provided to deploy entire application.
+- Create a folder `.ebextensions` and inside that create a file `python.config`
+- The `python.config` file is mainly to tell the `elastic beanstalk` the entry point of the application.
+- Create a file `application.py` and copy all the code of `app.py` and remove `debug=True` from the last line of code if any.
+- This is just for the deployment purpose only.
+- Now, commit and push the code.
